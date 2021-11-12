@@ -8,11 +8,12 @@ import HomeIcon from '../../icons/HomeIcon'
 import PhoneIcon from '../../icons/PhoneIcon'
 import AboutIcon from '../../icons/AboutIcon'
 import BlogIcon from '../../icons/BlogIcon'
+import SettingsIcon from '../../icons/SettingsIcon'
 const Menu: React.FC<{ variant: string, className?: string }> = ({ className = "", variant }) => {
     switch (variant) {
         case "sidebar":
             return (
-                <div className={`flex flex-col space-y-5 w-full p-4 ${className}`}>
+                <div className={`flex flex-col space-y-6 w-full p-4 ${className}`}>
                     <MenuItem placement="sidebar" title="Home" href="/">
                         <HomeIcon className="w-6 h-6" />
                     </MenuItem>
@@ -30,6 +31,9 @@ const Menu: React.FC<{ variant: string, className?: string }> = ({ className = "
                     </MenuItem>
                     <MenuItem placement="sidebar" title="Contact" href="/contact">
                         <PhoneIcon className="w-6 h-6" />
+                    </MenuItem>
+                    <MenuItem placement="sidebar" title="Settings" href="/settings">
+                        <SettingsIcon className="w-6 h-6" />
                     </MenuItem>
                 </div>
             )
