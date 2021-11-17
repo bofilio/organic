@@ -5,6 +5,8 @@
 :root{
   --primary:#49A010; 
   --transparent-primary:rgba(73, 160, 16, 0.1);
+  --transparent45-primary:rgba(73, 160, 16, 0.45);
+ 
 
   --secondary:#FB6D3A;
   --transparent-secondary: rgba(251, 109, 58, 0.1);
@@ -39,6 +41,9 @@ background: var(--primary);
 }
 .bg-tr-primary{
   background: var(--transparent-primary);
+}
+.bg-tr45-primary{
+  background:var(--transparent45-primary);
 }
 .text-primary{
   color: var(--primary);
@@ -165,6 +170,17 @@ font-size: 7px;
 .rounded-tr-7xl{
   border-top-right-radius: 5rem
 }
+.rounded-bl-4xl{
+  border-bottom-left-radius: 2rem
+}
+.rounded-bl-5xl{
+  border-bottom-left-radius: 3rem
+}
 .rounded-bl-7xl{
   border-bottom-left-radius: 5rem
+}
+
+/* filters */
+.hover\:flex:hover {
+ display: flex;
 }
