@@ -11,12 +11,11 @@ import Badge from '../util/Badge'
 import MenuIcon from '../icons/MenuIcon'
 import { ModalProvider } from '../../contexts/ModalContext'
 import OpenModal from '../modals/OpenModal'
-import Modal from '../modals/Modal'
 import SideMenu from './modals/SideMenu'
 import Menu from './menu/Menu'
 const Header = () => {
     const [search, setsearch] = React.useState("")
-    const hundleChange=(e:any)=>{
+    const hundleChange = (e: any) => {
         e.preventDefault();
         setsearch(e.target.value)
     }
@@ -60,16 +59,20 @@ const Header = () => {
                         </Link>
                     </form>
                     <div className=" hidden sm:flex items-center text-gray space-x-6">
-                        <Badge variant="sm" count={0} color="primary">
-                            <HeartIcon className="w-6 h-6" />
-                        </Badge>
+
+                        <Link href="/wishlist">
+                            <a>
+                                <Badge variant="sm" count={0} color="primary">
+                                    <HeartIcon className="w-6 h-6" />
+                                </Badge>
+                            </a>
+                        </Link>
                         <Link href="/cart">
                             <a>
                                 <Badge variant="sm" count={0} color="primary">
                                     <CartIcon className="w-6 h-6" />
                                 </Badge>
                             </a>
-
                         </Link>
 
                     </div>
