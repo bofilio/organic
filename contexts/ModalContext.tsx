@@ -1,7 +1,4 @@
 import React,{FC,useState,createContext} from 'react'
-import { ProviderProps } from 'react';
-
-
 
 export const ModalContext =createContext<[Boolean,Function]>([false,()=>{}]);
 export const ModalProvider:FC<{}> = ({children}) => {

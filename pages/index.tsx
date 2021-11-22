@@ -79,9 +79,59 @@ const Home: NextPage = () => {
 
 
           </TabContent>
-          <TabContent id={2} className="flex justify-center flex-wrap"></TabContent>
-          <TabContent id={3} className="flex justify-center flex-wrap"></TabContent>
-          <TabContent id={4} className="flex justify-center flex-wrap"></TabContent>
+          <TabContent id={2}>
+            <TabulationProvider>
+              <TabContent id={1} className="flex  flex-wrap">
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+              </TabContent>
+              <TabContent id={2} className="flex  flex-wrap">
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+              </TabContent>
+              <div className="flex justify-center space-x-2 mt-12">
+                <Tab title="1" id={1} />
+                <Tab title="2" id={2} />
+                <Tab title="3" id={3} />
+                <Tab title="4" id={4} />
+              </div>
+
+            </TabulationProvider>
+          </TabContent>
+          <TabContent id={3}>
+            <TabulationProvider>
+              <TabContent id={1} className="flex  flex-wrap">
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+              </TabContent>
+              <TabContent id={2} className="flex  flex-wrap">
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+                <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
+              </TabContent>
+              <div className="flex justify-center space-x-2 mt-12">
+                <Tab title="1" id={1} />
+                <Tab title="2" id={2} />
+                <Tab title="3" id={3} />
+                <Tab title="4" id={4} />
+              </div>
+
+            </TabulationProvider>
+          </TabContent>
+          <TabContent id={4} className="flex justify-center flex-wrap">empty!</TabContent>
           <TabContent id={5} className="flex justify-center flex-wrap">
             <Product className="mr-6 mb-6" name="Lemon" price={25.00} img="/imgs/olive.svg" />
           </TabContent>
